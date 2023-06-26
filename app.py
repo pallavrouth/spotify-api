@@ -5,8 +5,8 @@ from requests import post, get
 import json
 
 # set up
-client_id = os.environ("CLIENT_ID")
-client_secret = os.environ("CLIENT_SECRET")
+client_id = os.environ["CLIENT_ID"]
+client_secret = os.environ["CLIENT_SECRET"]
 
 # load_dotenv()
 # client_id = os.getenv("CLIENT_ID")
