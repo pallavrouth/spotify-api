@@ -1,15 +1,16 @@
 import streamlit as st
 import os
-from dotenv import load_dotenv
 import base64
 from requests import post, get
 import json
 
 # set up
+client_id = os.environ("CLIENT_ID")
+client_secret = os.environ("CLIENT_SECRET")
 
-load_dotenv()
-client_id = os.getenv("CLIENT_ID")
-client_secret = os.getenv("CLIENT_SECRET")
+# load_dotenv()
+# client_id = os.getenv("CLIENT_ID")
+# client_secret = os.getenv("CLIENT_SECRET")
 
 def get_token():
     auth_string = client_id + ":" + client_secret
